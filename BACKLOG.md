@@ -36,8 +36,8 @@ DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.m
 | DS-csomag | 13 |
 | Próba | 4 |
 | Kommunikáció | 5 |
-| Dokumentáció | 3 |
-| **Összesen** | **71** |
+| Dokumentáció | 4 |
+| **Összesen** | **72** |
 
 > ⚠️ **Sürgős:** DS-063: a Confluence MVP23 „Bejelentkezés” oldalán (127569636) nyílt belépési adat van. Nincs nyoma annak, hogy valaki jelezte volna.
 
@@ -148,6 +148,7 @@ Az FA szerint még nyitva van a 4. pont 45 sora és az 5–8. pont. Felelős min
 | DS-069 | Az egyeztetés menete (spec → design → DS) egy oldalban | Apáti | MV (Joci 6.) | – | Nyitott |
 | DS-070 | A DSR és az FR státuszainak frissítése | Apáti | DSR; FR | A DSR fejléce v1.9, a `mintak.json` már 1.19; a ×-kérdés eldőlt; az FR `ds-export` sora v1.3 | Nyitott |
 | DS-071 | Saját anyagok igazítása: WF-térkép K01, UX-031-b AC12 | Apáti | FE 3.1 | – | Nyitott |
+| DS-072 | A bemutató oldal hatóköre: a DS a DMS One minden felületére szól, nem csak a dmsX-re. A nyitócím javítva a közzétett oldalon (2026-11-19); a `gen_oldal.py` generátorban is át kell írni, különben a következő generálás visszahozza. A generátor nincs fent a `dmsx-modszertan` repóban | Apáti | `oldal/index.html`; `ds-export/forras/gen_oldal.py` | Nyitott kérdés: a „dmsX design system” név (cím, leírás, márkajel) is DMS One-ra változzon-e | Nyitott |
 
 ## UX-igények (DoR) állapota
 
