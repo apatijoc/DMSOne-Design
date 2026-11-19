@@ -1,4 +1,4 @@
-# dmsX design system: backlog
+# DMS One design system: backlog
 
 Első gyűjtés: 2026-11-19, a `dmsreg/dmsx-modszertan` repó munkaanyagaiból (csak olvasva). Gazda: Apáti József. A leltár: [LELTAR.md](LELTAR.md).
 
@@ -148,7 +148,7 @@ Az FA szerint még nyitva van a 4. pont 45 sora és az 5–8. pont. Felelős min
 | DS-069 | Az egyeztetés menete (spec → design → DS) egy oldalban | Apáti | MV (Joci 6.) | – | Nyitott |
 | DS-070 | A DSR és az FR státuszainak frissítése | Apáti | DSR; FR | A DSR fejléce v1.9, a `mintak.json` már 1.19; a ×-kérdés eldőlt; az FR `ds-export` sora v1.3 | Nyitott |
 | DS-071 | Saját anyagok igazítása: WF-térkép K01, UX-031-b AC12 | Apáti | FE 3.1 | – | Nyitott |
-| DS-072 | A bemutató oldal hatóköre: a DS a DMS One minden felületére szól, nem csak a dmsX-re. A nyitócím javítva a közzétett oldalon (2026-11-19); a `gen_oldal.py` generátorban is át kell írni, különben a következő generálás visszahozza. A generátor nincs fent a `dmsx-modszertan` repóban | Apáti | `oldal/index.html`; `ds-export/forras/gen_oldal.py` | Nyitott kérdés: a „dmsX design system” név (cím, leírás, márkajel) is DMS One-ra változzon-e | Nyitott |
+| DS-072 | A bemutató oldal hatóköre: a DS a DMS One minden felületére szól, nem csak a dmsX-re. A nyitócím és a név („DMS One design system”: cím, leírás, márkajel, kereső) javítva a közzétett oldalon (2026-11-19, Apáti József döntése); a `gen_oldal.py` generátorban is át kell írni, különben a következő generálás visszahozza. A generátor nincs fent a `dmsx-modszertan` repóban | Apáti | `oldal/index.html`; `ds-export/forras/gen_oldal.py` | Utána: a `ds-export` README-k és a `dmsx-design` skill hatókör-leírása is a DMS One-ra | Nyitott |
 
 ## UX-igények (DoR) állapota
 

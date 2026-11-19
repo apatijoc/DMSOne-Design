@@ -1,6 +1,8 @@
-# dmsX design system: leltár
+# DMS One design system: leltár
 
-Állapot: 2026-11-19. Gazda: Apáti József (Felület, design, UX copy).
+Állapot: 2026-11-19. Gazda: Apáti József (designer; a DS és a design-megvalósítások felelőse).
+
+**Hatókör:** a design system a DMS One minden termékének felületére szól (Ulti, dmsX, SKY, Számlatár Pro, Flex), nem csak a dmsX-re. A neve 2026-11-19 óta „DMS One design system”. A források egy része (Figma-könyvtár, `ds-export` csomag) történeti okból még dmsX-nevű, mert a dmsX-fejlesztéshez készült elsőként.
 
 A design system jelenleg nem önálló repóban él. A forrás a `dmsreg/dmsx-modszertan` repó (privát), a bemutató és a próba claude.ai-artifactként, a tervezés forrása a Figma. Ez a repó a DS-feladatok kezelésére szolgál; a tartalom egyelőre a helyén marad, innen csak hivatkozunk rá.
 
@@ -45,7 +47,7 @@ A design system jelenleg nem önálló repóban él. A forrás a `dmsreg/dmsx-mo
 
 | Artifact | Mi ez | Frissítve |
 |---|---|---|
-| [dmsX design system](https://claude.ai/artifact/8zUw5fV62Urua9RbJ8Poda) | DS bemutató oldal | 2026-11-18 |
+| [DMS One design system](https://claude.ai/artifact/8zUw5fV62Urua9RbJ8Poda) | DS bemutató oldal (2026-11-19-ig „dmsX design system” néven) | 2026-11-18 |
 | [dmsX (Claude Design DS)](https://claude.ai/artifact/663CdKkAfzGaotBwuXtfxJ) | brand book és élő referencia, React-csomag (`window.DmsX`), nem éles kód; privát | 2026-11-19 |
 | [dmsX alapváz próba](https://claude.ai/artifact/J7Njya913tLiQjjCvRJLqY) | a kattintható próba közzétett példánya | 2026-11-18 |
 | [dmsX design skill](https://claude.ai/artifact/7v1q6QhMPQQjgCqF1MaLN1) | a `dmsx-design` skill bemutatója | 2026-11-12 |
