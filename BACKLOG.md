@@ -2,10 +2,29 @@
 
 Első gyűjtés: 2026-11-19, a `dmsreg/dmsx-modszertan` repó munkaanyagaiból (csak olvasva). Gazda: Apáti József. A leltár: [LELTAR.md](LELTAR.md).
 
-**Állapotok:** Nyitott · Folyamatban · Vár (másra vár) · Kész · Elvetve. Az első gyűjtésnél minden tétel „Nyitott”; a „Vár” besorolást átnézéskor kell megadni.
+**Állapotok:** Nyitott (nálam) · Folyamatban · Vár: <kire/mire> · Kész · Elvetve.
+
+**Szerep:** a design system és a design-megvalósítások gazdája és felelőse Apáti József (designer). Ami „Nyitott”, az nála van; ami „Vár”, ott más dönt vagy szállít, és tőle csak a követés kell.
 
 **Forrás-rövidítések** (a `dmsx-modszertan` repóban; `F/` = `feltaras/felulet-design-ux-copy/`, `DS/` = `F/ds-export/`):
 DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.md` · MJ = `DS/mintak.md` · FR = `F/README.md` · DR = `F/…-design-review-2026-11-03.md` · FE = `F/…-fe-epithetoseg-2026-11-09.md` · DF = `F/…-design-felmeres-2026-11-06.md` · MV = `F/…-meeting-visszajelzesek-2026-11-10.md` · KC = `F/…-kerdescsomag-2026-11-09.md` · KND = `F/…-kerdessor-nagy-daniel-2026-11-05.md` · GI = `F/…-gombige-javaslat-2026-11-17.md` · BL = `F/…-betumeret-lapozas-2026-11-03.md` · UX = `kimenet/felulet-design-ux-copy/` · D04 = `docs/04-dontesi-naplo.md`
+
+## Nálam: javasolt sorrend
+
+| # | Tételek | Miért most |
+|---|---|---|
+| 1 | **DS-063** biztonsági jelzés | Nyílt belépési adat, sürgős |
+| 2 | **DS-065**, **DS-066** kérdéscsomag és Nagy Dániel kérdéssora, frissítve és elküldve | Ezen áll a 12 integrációs tétel (DS-021–032) és több „Vár” döntés |
+| 3 | **DS-012** a saját döntésemen álló UX-DoR-ok | 14 jegy gyorsan DoR-t kaphat |
+| 4 | **DS-006**, **DS-007**, **DS-008**, **DS-009**, **DS-011** saját DS-döntések | Rövidek, és a csomag szabályait zárják le |
+| 5 | **DS-042**, **DS-044**, **DS-045** Figma: méretarány, export, átvezetési lista | Enélkül a következő generálás felülírja a döntéseket |
+| 6 | **DS-047**, **DS-049**–**DS-052**, **DS-054**–**DS-056** DS-csomag | A csomag ügynök-oldali hiányai |
+| 7 | **DS-033**–**DS-041**, **DS-043**, **DS-046** Figma-átvezetés | Nagy tömeg, folyamatosan |
+| 8 | **DS-060**–**DS-062**, **DS-064** próba | – |
+| 9 | **DS-069**–**DS-071** dokumentáció | DS-070: a README-k verziói elavultak |
+| – | Közös döntések, ahol én is benne vagyok: **DS-001**, **DS-003**, **DS-010**, **DS-017**, **DS-019**; kommunikáció: **DS-067** | A másik féllel egyeztetve |
+
+**Másra vár (27 tétel):** a táblákban „Vár: …” állapottal. Nagy Dánielnél 10, Kovács Tamásnál 8, Horváth Bencénél 7, Polyák Ádámnál 4, Négyes Jánosnál 4, Ollári Ákosnál 3 (egy tétel több embernél is lehet); 3 tétel másik backlogtételre vár.
 
 ## Összesítő
 
@@ -27,10 +46,10 @@ DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.m
 | ID | Tétel | Ki dönt / felelős | Forrás | Megjegyzés | Állapot |
 |---|---|---|---|---|---|
 | DS-001 | Feladataim kontra DK-143 ellentmondás lezárása | Kovács Tamás + Apáti József | D04 (DK-143); MV 1; KC T2 | A DK-143 szerint a szakmenük a Feladataim szűrt nézetei; a 11-10-i döntés és a `lista` minta szerint saját menük, számláló nélkül | Nyitott |
-| DS-002 | „Teendőd: …” sáv és „Teendőid” jelzés szava | Kovács Tamás | KC T1; VN (11-09) | Az SZ-89 maradéka | Nyitott |
+| DS-002 | „Teendőd: …” sáv és „Teendőid” jelzés szava | Kovács Tamás | KC T1; VN (11-09) | Az SZ-89 maradéka | Vár: Kovács Tamás |
 | DS-003 | Feladataim részletei: számláló a nézetfüleken, „Mit kell csinálni” widget, Piszkozatok, kitűzhető és csoportosított nézet, összevonható menük | Apáti (+Horváth Bence, Ollári Ákos, Csányi Anikó) | MV 1–2 | A 11-10-i megbeszélés nyitott pontjai | Nyitott |
-| DS-004 | Belépés: kezdőoldal (D13), kétlépcsős kötelezősége, egység belépéskor, belépési napló | Kovács Tamás / Horváth Bence / Ollári Ákos | DF 3.; VN (1.5); KC B3 | Rajzolás és bérlőcímzés: DS-026 | Nyitott |
-| DS-005 | Kell-e Classic megjelenés a pilotnál | Kovács Tamás | DSR; D04 (11-02) | Ma a felületen nem kínáljuk | Nyitott |
+| DS-004 | Belépés: kezdőoldal (D13), kétlépcsős kötelezősége, egység belépéskor, belépési napló | Kovács Tamás / Horváth Bence / Ollári Ákos | DF 3.; VN (1.5); KC B3 | Rajzolás és bérlőcímzés: DS-026 | Vár: Kovács Tamás, Horváth Bence, Ollári Ákos |
+| DS-005 | Kell-e Classic megjelenés a pilotnál | Kovács Tamás | DSR; D04 (11-02) | Ma a felületen nem kínáljuk | Vár: Kovács Tamás |
 | DS-006 | „Döntök” gomb a listasoron (javaslat) | Apáti | DSR; VN (1.9); MJ | Jóváhagyásra vár | Nyitott |
 | DS-007 | Nézetváltó minta (VDK-108) jóváhagyása | Apáti; Kovács Tamás (T5) | MJ (`nezetvalto`); KC T5 | „Javaslat, jóváhagyásra vár” | Nyitott |
 | DS-008 | `--spacing-xs` és `--spacing-sm` egyaránt 4 px a 0,8-es skálán | Apáti | VN (11-18) | Kell-e két külön lépés | Nyitott |
@@ -38,31 +57,31 @@ DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.m
 | DS-010 | Tömeges továbbadás a Feladataimból; csoportos lezárás (WF-021) | Apáti + Kovács Tamás | VN (1.3); MJ (`reszletoldal`); KC T4 | Az összevont lista óta nincs a próbában | Nyitott |
 | DS-011 | Szövegmező világos kerete (WCAG 1.4.11) és a 4,5:1 alatti linkszín | Apáti | DSR; UX/UX-058.md | A keret tudatos, nyitva tartott eltérés | Nyitott |
 | DS-012 | Apáti-döntésen álló UX-DoR-ok: UX-016, -017, -024-a, -031-a, -032, -035, -040, -052, -057, -058, -062, -063-a/b; -008-a és -047-a bontása | Apáti (UX-062: + Kovács Tamás) | UX/UX-*.md | Gyorsan DoR-t kaphatnak | Nyitott |
-| DS-013 | Design review nyitott B-i: B6 előnézet, B12 jobb gombos menü, B14 ÉS/VAGY szűrés, B16 saját oszlop, B17 nézetek a főkeresőben, B18 P2P menü | Polyák Ádám / PO-k / Horváth Bence / Apáti | DR | – | Nyitott |
-| DS-014 | Bemutató D1 (elintézés válaszirat nélkül), D3 (csatolmányverziók, CSAT-001), D5 (toast szövege) | Kovács Tamás / Ollári Ákos / ToV-gazda | DR; KC B8 | – | Nyitott |
-| DS-015 | Gombige-javaslat (D02-a–d) jóváhagyása, 3 nyitott ige | Kovács Tamás, Polyák Ádám; „Határidőbe teszem”: Ollári Ákos | GI | Apáti 11-17-én döntött | Nyitott |
-| DS-016 | Betű- és oldalméret (25/50/100, „idei év” szűrő, címméret, tömeges felső határ) | Kovács Tamás, Horváth Bence | BL C) | A 0,8-es skála után a px-értékeket újra kell nézni | Nyitott |
+| DS-013 | Design review nyitott B-i: B6 előnézet, B12 jobb gombos menü, B14 ÉS/VAGY szűrés, B16 saját oszlop, B17 nézetek a főkeresőben, B18 P2P menü | Polyák Ádám / PO-k / Horváth Bence / Apáti | DR | – | Vár: Polyák Ádám, PO-k, Horváth Bence |
+| DS-014 | Bemutató D1 (elintézés válaszirat nélkül), D3 (csatolmányverziók, CSAT-001), D5 (toast szövege) | Kovács Tamás / Ollári Ákos / ToV-gazda | DR; KC B8 | – | Vár: Kovács Tamás, Ollári Ákos |
+| DS-015 | Gombige-javaslat (D02-a–d) jóváhagyása, 3 nyitott ige | Kovács Tamás, Polyák Ádám; „Határidőbe teszem”: Ollári Ákos | GI | Apáti 11-17-én döntött | Vár: Kovács Tamás, Polyák Ádám |
+| DS-016 | Betű- és oldalméret (25/50/100, „idei év” szűrő, címméret, tömeges felső határ) | Kovács Tamás, Horváth Bence | BL C) | A 0,8-es skála után a px-értékeket újra kell nézni | Vár: Kovács Tamás, Horváth Bence |
 | DS-017 | Alapdöntések nyitottjai: „Később” gomb, nyilatkozatmondat, termékhang-pontok, ellentmondás az ügynökszabályokkal | Ollári Ákos, Apáti | F/…-alapdontesek-2026-10-30.md | – | Nyitott |
-| DS-018 | A 404-es és felesleges menüpontok listájának gazdája | Horváth Bence / Négyes János | MV 8 | Ákos kérése: 404 helyett üres állapot | Nyitott |
+| DS-018 | A 404-es és felesleges menüpontok listájának gazdája | Horváth Bence / Négyes János | MV 8 | Ákos kérése: 404 helyett üres állapot | Vár: Horváth Bence, Négyes János |
 | DS-019 | Dashboard-felmérés döntései | DK-130: adat Kovács Tamás, megjelenés Apáti | F/…-dashboard-felmeres-2026-11-05.md | – | Nyitott |
-| DS-020 | Állapotmodell-rések a felületen (PART, JOG, AI, VDK, WF), aláírási folyamat képernyői | Kovács Tamás, Horváth Bence | FE 4; KC T13, B7 | Enélkül nem ellenőrizhető gépileg | Nyitott |
+| DS-020 | Állapotmodell-rések a felületen (PART, JOG, AI, VDK, WF), aláírási folyamat képernyői | Kovács Tamás, Horváth Bence | FE 4; KC T13, B7 | Enélkül nem ellenőrizhető gépileg | Vár: Kovács Tamás, Horváth Bence |
 
 ## Integráció
 
 | ID | Tétel | Ki dönt / felelős | Forrás | Megjegyzés | Állapot |
 |---|---|---|---|---|---|
-| DS-021 | DS-csomag helye a fejlesztői repóban, generálás módja (UX-072) | Nagy Dániel | DSR; KC N1; KND 1; UX/UX-072.md | Az UX-072 fájllistája elavult | Nyitott |
-| DS-022 | Angular-komponenskönyvtár, a katalógus „Kód” oszlopa, self-hosted Material Symbols | Nagy Dániel, utána Apáti | DSR; KC N2; DF 1.; UX/UX-073-a…d, UX-001 | – | Nyitott |
-| DS-023 | `ellenor.py` és `gen_mintak.py` a CI-ben, axe (UX-053) | Nagy Dániel, Négyes János | DSR; KC N4; KND 3; UX/UX-053.md | Az axe-nak nincs gazdajegye | Nyitott |
-| DS-024 | A Platform építi-e a közös felületi csomagot (AD1 #1) | Nagy Dániel | UX/README.md; UX-001, UX-031-a/b/c | Ezen áll a „mag” jegyeinek sorrendje | Nyitott |
-| DS-025 | Felirat-szótár formátuma és nyelv (UX-013-a/b, UX-063, UX-008-b) | Nagy Dániel (formátum), Kovács Tamás (nyelv) | KC N3; FE 2 | – | Nyitott |
-| DS-026 | Keret-DoR-ok (UX-074-a/b/c), részletoldalak URL-sémája | Horváth Bence (+Nagy Dániel) | KC B1, N9; FE 2 | – | Nyitott |
-| DS-027 | Belépőoldal: Keycloak-téma, bérlő címzése, címtár/SSO az M1-ben | Nagy Dániel, Horváth Bence | DF 3.; KC N5, B2 | A JOG-010-nek nincs DoR-ja | Nyitott |
-| DS-028 | A `ds-atallas` ág fő ágra kerülése (DS ráhúzása a K4-re) | Négyes János (teszt-átírás: Nagy Dániel) | VN (11-10); DS/atallas-egy-futasban.md | Az eredmény nem látszik a repóban | Nyitott |
-| DS-029 | AGENTS.md felületi szakasz jóváhagyása | Négyes János, Nagy Dániel | DS/agents-md-szakasz.md | Javaslat, 11-10 | Nyitott |
-| DS-030 | Dokumentum-megjelenítő (PDF.js / Adobe / fizetős) | Nagy Dániel | KND 4 | Csak a KND-ben szerepel | Nyitott |
-| DS-031 | Egyéb architektúra: mobil, bérlő-arculat, élő frissítés, e-mail beégetett értékei, Szekuricsi felületi ellenőrzése, modulkulcs | Nagy Dániel (+Kovács Tamás, Négyes János) | KC N6–N12; FE 2; docs/05 8. | – | Nyitott |
-| DS-032 | Lapozás: oldalszámos vagy kurzoros, pontos vagy becsült darabszám, teljes kijelölés küldése | Nagy Dániel | BL C) | – | Nyitott |
+| DS-021 | DS-csomag helye a fejlesztői repóban, generálás módja (UX-072) | Nagy Dániel | DSR; KC N1; KND 1; UX/UX-072.md | Az UX-072 fájllistája elavult | Vár: Nagy Dániel |
+| DS-022 | Angular-komponenskönyvtár, a katalógus „Kód” oszlopa, self-hosted Material Symbols | Nagy Dániel, utána Apáti | DSR; KC N2; DF 1.; UX/UX-073-a…d, UX-001 | – | Vár: Nagy Dániel |
+| DS-023 | `ellenor.py` és `gen_mintak.py` a CI-ben, axe (UX-053) | Nagy Dániel, Négyes János | DSR; KC N4; KND 3; UX/UX-053.md | Az axe-nak nincs gazdajegye | Vár: Nagy Dániel, Négyes János |
+| DS-024 | A Platform építi-e a közös felületi csomagot (AD1 #1) | Nagy Dániel | UX/README.md; UX-001, UX-031-a/b/c | Ezen áll a „mag” jegyeinek sorrendje | Vár: Nagy Dániel |
+| DS-025 | Felirat-szótár formátuma és nyelv (UX-013-a/b, UX-063, UX-008-b) | Nagy Dániel (formátum), Kovács Tamás (nyelv) | KC N3; FE 2 | – | Vár: Nagy Dániel, Kovács Tamás |
+| DS-026 | Keret-DoR-ok (UX-074-a/b/c), részletoldalak URL-sémája | Horváth Bence (+Nagy Dániel) | KC B1, N9; FE 2 | – | Vár: Horváth Bence |
+| DS-027 | Belépőoldal: Keycloak-téma, bérlő címzése, címtár/SSO az M1-ben | Nagy Dániel, Horváth Bence | DF 3.; KC N5, B2 | A JOG-010-nek nincs DoR-ja | Vár: Nagy Dániel, Horváth Bence |
+| DS-028 | A `ds-atallas` ág fő ágra kerülése (DS ráhúzása a K4-re) | Négyes János (teszt-átírás: Nagy Dániel) | VN (11-10); DS/atallas-egy-futasban.md | Az eredmény nem látszik a repóban | Vár: Négyes János |
+| DS-029 | AGENTS.md felületi szakasz jóváhagyása | Négyes János, Nagy Dániel | DS/agents-md-szakasz.md | Javaslat, 11-10 | Vár: Négyes János, Nagy Dániel |
+| DS-030 | Dokumentum-megjelenítő (PDF.js / Adobe / fizetős) | Nagy Dániel | KND 4 | Csak a KND-ben szerepel | Vár: Nagy Dániel |
+| DS-031 | Egyéb architektúra: mobil, bérlő-arculat, élő frissítés, e-mail beégetett értékei, Szekuricsi felületi ellenőrzése, modulkulcs | Nagy Dániel (+Kovács Tamás, Négyes János) | KC N6–N12; FE 2; docs/05 8. | – | Vár: Nagy Dániel |
+| DS-032 | Lapozás: oldalszámos vagy kurzoros, pontos vagy becsült darabszám, teljes kijelölés küldése | Nagy Dániel | BL C) | – | Vár: Nagy Dániel |
 
 ## Figma-átvezetés
 
@@ -90,18 +109,18 @@ Az FA szerint még nyitva van a 4. pont 45 sora és az 5–8. pont. Felelős min
 | ID | Tétel | Felelős | Forrás | Megjegyzés | Állapot |
 |---|---|---|---|---|---|
 | DS-047 | Egységválasztás kivétele a `belepes` mintából | Apáti | MV (Joci 4.); MJ | – | Nyitott |
-| DS-048 | `lista`: „Feladat” oszlop és a Feladataim helye; `app-shell`: a sín az összesítő oldalt nyitja, nincs számláló | Apáti | MV 1 | Függ: DS-001 | Nyitott |
+| DS-048 | `lista`: „Feladat” oszlop és a Feladataim helye; `app-shell`: a sín az összesítő oldalt nyitja, nincs számláló | Apáti | MV 1 | Függ: DS-001 | Vár: DS-001 |
 | DS-049 | A minták px-számainak átírása a 0,8-es skálára | Apáti | VN (11-18) | – | Nyitott |
 | DS-050 | Szakaszfejléc átvezetése a sablonszerkesztőbe, a mezőtervezőbe és a próba többi részébe | Apáti | VN (11-17) | – | Nyitott |
 | DS-051 | Referenciakép a „Továbbiak” panelről és a kikapcsolt menüpontról | Apáti | VN (11-16) | – | Nyitott |
 | DS-052 | Hiányzó ikonok a szótárban (UX-017 négy igéje, „Eltávolítom”), a tárgyas nyitógomb szabálya | Apáti | UX-017, UX-024-a; FE 3.9 | Ettől lesz DoR a két jegy | Nyitott |
-| DS-053 | Gombige átvezetése: dms-ux-writing, `ellenor.py` (GYENGEIGE, NEZETIGE), ToV-csv | Apáti | GI 7. | Függ: DS-015 | Nyitott |
+| DS-053 | Gombige átvezetése: dms-ux-writing, `ellenor.py` (GYENGEIGE, NEZETIGE), ToV-csv | Apáti | GI 7. | Függ: DS-015 | Vár: DS-015 |
 | DS-054 | „Irat képe”, „aláírandó”, „kézbesítendő” jelölés megjelenése (DK-018) | Apáti | D04 (11-05) | – | Nyitott |
 | DS-055 | Közös mintaadat-készlet / API-mock | Apáti | DF 11.; FE 3.10 | 50 elfogadási kritérium a próba adataira hivatkozik | Nyitott |
 | DS-056 | `verzio.json`, átadási menet, a menüpont-ikonok gépi exportja | Apáti | DF 10., 12.; FE 3.12–13; UX-072 | – | Nyitott |
-| DS-057 | Komponenshiány-felmérés a GitHub-specekből | Apáti | MV 8 | Polyák Ádám anyagára vár | Nyitott |
-| DS-058 | A ToV és a szövegkönyvtár egy példánya a csomagba | Apáti | DF 4. | Függ: DS-025 | Nyitott |
-| DS-059 | Polyák Ádám P2P-állapotainak felvétele a szójegyzékbe | Polyák Ádám → Apáti | MV (Joci 5.) | Az anyag még nem jött meg | Nyitott |
+| DS-057 | Komponenshiány-felmérés a GitHub-specekből | Apáti | MV 8 | Polyák Ádám anyagára vár | Vár: Polyák Ádám |
+| DS-058 | A ToV és a szövegkönyvtár egy példánya a csomagba | Apáti | DF 4. | Függ: DS-025 | Vár: DS-025 |
+| DS-059 | Polyák Ádám P2P-állapotainak felvétele a szójegyzékbe | Polyák Ádám → Apáti | MV (Joci 5.) | Az anyag még nem jött meg | Vár: Polyák Ádám |
 
 ## Próba
 
@@ -120,7 +139,7 @@ Az FA szerint még nyitva van a 4. pont 45 sora és az 5–8. pont. Felelős min
 | DS-065 | Kérdéscsomag a gazdáknak (N, T, B, A, P blokkok) frissítése és küldése | Apáti → Nagy Dániel, Kovács Tamás, Horváth Bence, Ollári Ákos, Polyák Ádám | KC; FR | Előtte ki kell venni, ami azóta eldőlt | Nyitott |
 | DS-066 | Kérdéssor Nagy Dánielnek (4 kérdés + Slack-változat) | Apáti jóváhagyása | KND; FR | Átfed a DS-065 N-blokkjával | Nyitott |
 | DS-067 | Belépőoldal háttérrajzának megerősítése a márka gazdájával | Apáti | VN (1.5) | – | Nyitott |
-| DS-068 | Megjelenjenek-e az érkeztetés és a bontás tételei a Feladataimban név szerinti kiosztásnál | Ollári Ákos | MV 1 | – | Nyitott |
+| DS-068 | Megjelenjenek-e az érkeztetés és a bontás tételei a Feladataimban név szerinti kiosztásnál | Ollári Ákos | MV 1 | – | Vár: Ollári Ákos |
 
 ## Dokumentáció
 
