@@ -99,7 +99,7 @@ Az FA szerint még nyitva van a 4. pont 45 sora és az 5–8. pont. Felelős min
 | DS-040 | Az Irányelvek oldal szövegei | FA 5 | – | Nyitott |
 | DS-041 | Az export 7 hibája (Text field fókusz/hiba, Button size, sortáv, magyar leírások, Highlight, Overlay footer, „Rendben”) | FA 6; DSR | – | Nyitott |
 | DS-042 | 0,8-es méretarány a Figma-változókban, utána a generátor `--skala` nélkül fut | FA 8; VN (11-18) | Különben kétszer kicsinyít | Nyitott |
-| DS-043 | Dark mód kitöltése, a sötét paletta kontrasztmérése | FA 2; DSR; FE 3.11 | – | Nyitott |
+| DS-043 | Dark mód kitöltése, a sötét paletta kontrasztmérése. **2026-11-19:** a fejlesztett felület sötétben szinte fekete, mert a `tokens.css` a panelt, a mezőt és az ablakot is `surface-container-lowest`-re köti (sötétben #0c0e13), így az ablak beleolvad. A próba saját palettája (ablak #22262c) jó. Teendő: sötétben külön szerep-tokenek (háttér, kártya, ablak, mező), a próbához igazítva; a mezőkeret sötétben `outline` (a mostani 2,08:1) | FA 2; DSR; FE 3.11; `ellenorzes/sotet-tema-osszevetes-2026-11-19.png` | Javaslat: háttér #111318, kártya #191c20, ablak #282a2f, fátyol 40% | Nyitott |
 | DS-044 | Figma TSV-export frissítése, utána a `dontesek-*.tsv` sorainak törlése | FA; DSR | Frissítés nélkül a törlés visszahozza a régi értékeket | Nyitott |
 | DS-045 | A 11-16–18-i változások felvétele az FA-ba: szakaszfejléc, egységes modálok × nélkül, „Továbbiak”, környezetjelző, eredménykártya | VN (11-16…18) | Ellenőrizendő, hogy hiányoznak-e | Nyitott |
 | DS-046 | Claude Design DS (brand book) szinkronja egy forrásból | DSR | A magyar Figma-leírások a mérvadók | Nyitott |
