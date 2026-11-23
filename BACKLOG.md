@@ -34,10 +34,10 @@ DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.m
 | Integráció | 12 |
 | Figma-átvezetés | 14 |
 | DS-csomag | 13 |
-| Próba | 4 |
+| Próba | 5 |
 | Kommunikáció | 5 |
 | Dokumentáció | 4 |
-| **Összesen** | **72** |
+| **Összesen** | **73** |
 
 > ⚠️ **Sürgős:** DS-063: a Confluence MVP23 „Bejelentkezés” oldalán (127569636) nyílt belépési adat van. Nincs nyoma annak, hogy valaki jelezte volna.
 
@@ -130,6 +130,7 @@ Az FA szerint még nyitva van a 4. pont 45 sora és az 5–8. pont. Felelős min
 | DS-061 | Dashboard: „Teendőim típus szerint” widget | Apáti | MV 2 | – | Nyitott |
 | DS-062 | 11-10-i javaslatok: értesítés-beállítás helye, cégnyilvántartás-kereső, tömeges sztornó megerősítése és korlátja, WF + ügykezelés egy sorban | Apáti; szabály: Ollári Ákos, Horváth Bence | MV 5–7 | Állapota a próbában ellenőrizendő | Nyitott |
 | DS-064 | Design-átnézés eltérései: Partner és Dosszié, oldalcím-méret, Profil, szűrő-helyőrző, helykitöltő, Postázás összesítője | Apáti | F/…-design-atnezes-2026-11-05.md | Állapota ellenőrizendő | Nyitott |
+| DS-073 | Dátumválasztó fejléce nem egyforma (2026-11-23): a minta (`urlapmezok`, 11-19) kattintható „2026. november” fejlécet ír hónapválasztóval (3 × 4) és jobbra a két nyilat; a próba naptára (11-04-i kód) két oldalt nyíl, nem kattintható cím, nincs hónap- és évváltó, üres szomszédnapok, 5 sor, nincs Holnap / 1 hét múlva; a Figmában négy naptárcsalád (Modal, Input, Docked, Classic window) eltérő fejléccel; a bemutató oldal a 11-18-i szöveget mutatja (jobbra ikon). Az évváltás a mintában nincs leírva | Apáti | MJ (`urlapmezok`); próba `dsRenderDate`; `komponensek.md` Date & Time Pickers | Javaslat: egy fejléc mindenhol: „2026. november ▾” + jobbra ‹ ›; a címre hónaprács, benne ‹ 2026 › évléptető | Nyitott |
 
 ## Kommunikáció
 
