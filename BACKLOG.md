@@ -34,10 +34,10 @@ DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.m
 | Integráció | 12 |
 | Figma-átvezetés | 14 |
 | DS-csomag | 13 |
-| Próba | 5 |
+| Próba | 27 |
 | Kommunikáció | 5 |
 | Dokumentáció | 4 |
-| **Összesen** | **73** |
+| **Összesen** | **95** |
 
 > ⚠️ **Sürgős:** DS-063: a Confluence MVP23 „Bejelentkezés” oldalán (127569636) nyílt belépési adat van. Nincs nyoma annak, hogy valaki jelezte volna.
 
@@ -130,7 +130,35 @@ Az FA szerint még nyitva van a 4. pont 45 sora és az 5–8. pont. Felelős min
 | DS-061 | Dashboard: „Teendőim típus szerint” widget | Apáti | MV 2 | – | Nyitott |
 | DS-062 | 11-10-i javaslatok: értesítés-beállítás helye, cégnyilvántartás-kereső, tömeges sztornó megerősítése és korlátja, WF + ügykezelés egy sorban | Apáti; szabály: Ollári Ákos, Horváth Bence | MV 5–7 | Állapota a próbában ellenőrizendő | Nyitott |
 | DS-064 | Design-átnézés eltérései: Partner és Dosszié, oldalcím-méret, Profil, szűrő-helyőrző, helykitöltő, Postázás összesítője | Apáti | F/…-design-atnezes-2026-11-05.md | Állapota ellenőrizendő | Nyitott |
-| DS-073 | Dátumválasztó fejléce nem egyforma (2026-11-23): a minta (`urlapmezok`, 11-19) kattintható „2026. november” fejlécet ír hónapválasztóval (3 × 4) és jobbra a két nyilat; a próba naptára (11-04-i kód) két oldalt nyíl, nem kattintható cím, nincs hónap- és évváltó, üres szomszédnapok, 5 sor, nincs Holnap / 1 hét múlva; a Figmában négy naptárcsalád (Modal, Input, Docked, Classic window) eltérő fejléccel; a bemutató oldal a 11-18-i szöveget mutatja (jobbra ikon). Az évváltás a mintában nincs leírva | Apáti | MJ (`urlapmezok`); próba `dsRenderDate`; `komponensek.md` Date & Time Pickers | Javaslat: egy fejléc mindenhol: „2026. november ▾” + jobbra ‹ ›; a címre hónaprács, benne ‹ 2026 › évléptető | Nyitott |
+| DS-073 | Dátumválasztó fejléce nem egyforma (2026-11-23): a minta (`urlapmezok`, 11-19) kattintható „2026. november” fejlécet ír hónapválasztóval (3 × 4) és jobbra a két nyilat; a próba naptára (11-04-i kód) két oldalt nyíl, nem kattintható cím, nincs hónap- és évváltó, üres szomszédnapok, 5 sor, nincs Holnap / 1 hét múlva; a Figmában négy naptárcsalád (Modal, Input, Docked, Classic window) eltérő fejléccel; a bemutató oldal a 11-18-i szöveget mutatja (jobbra ikon). Az évváltás a mintában nincs leírva | Apáti | MJ (`urlapmezok`); próba `dsRenderDate`; `komponensek.md` Date & Time Pickers | 2026-11-23: a próbában és a mintában kész (DS 1.26, `32bb8b9`), 5 elfogadási teszt átmegy; hátra: SKY dmsX (évváltó, DS-095), Figma, bemutató oldal | Folyamatban |
+
+### Próba-felmérés (2026-11-23): a rögzített DS-döntések, amelyek a próbából hiányoznak
+A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változásnapló 11-04 és 11-19 közötti 119 UI-döntéséből 83 megvan, 18 részben, 7 hiányzik, 9-et későbbi döntés felülírt, 2 nem ellenőrizhető (gépi felmérés: kódkeresés és böngészős mérés). Itt a hiányzók és a részlegesek; mindegyik a próbába megy, a mintát nem kell módosítani. Felelős: Apáti.
+
+| ID | Tétel (DS-döntés) | Mi van ma a próbában | Minta | Állapot |
+|---|---|---|---|---|
+| DS-074 | Visszalépés a listára (1.25): nincs animáció, a görgetés és a szűrők megmaradnak, a fókusz a kiinduló sorra kerül 1,5 s + 400 ms kiemeléssel, eltűnt sornál a lista címére | Hiányzik: visszalépéskor újra fut a belépő animáció, a görgetés a tetejére ugrik, a fókusz a BODY-n | `lista, mozgas` | Nyitott |
+| DS-075 | Ablakok bezárása egységesen 160 ms (1.24) | Részben: a műveleti ablak animáció nélkül 130 ms-nál tűnik el, a jogosultsági ablak 200 ms-ig oldalra csúszik, a súgó régi görbével, a lenyíló 120/140 ms | `muveleti-urlapablak, fokusznezet` | Nyitott |
+| DS-076 | Új elem kiemelése: 1,5 s áll, 400 ms alatt elhalványul (1.24) | Részben: az új megjegyzés kiemelése nem halványul el | `megjegyzes-szal, elo-frissites` | Nyitott |
+| DS-077 | Második menüszint zárása 160 ms elhalványulással, a nyíl visszafordul (1.24) | Részben: a nyitás megvan, a zárás animáció nélküli | `app-shell` | Nyitott |
+| DS-078 | Szakasz az ablakban: cím a blokk fölött, keret nélküli frame-blokk; szakaszhiba 1 px Error kerettel (1.21) | Hiányzik (csak a SKY dmsX-ben van): a jogosultsági ablakok szakaszai sima címke + keretes doboz | `szakaszfejlec, muveleti-urlapablak` | Nyitott |
+| DS-079 | Részletpanel-változat: fejléc Featured iconnal, szakaszok frame-blokkban, címke–érték egymás alatt (1.20) | Hiányzik: a próbában nincs részletpanel | `szakaszfejlec` | Nyitott |
+| DS-080 | Szakaszcím a kártya fölött, darabszám nélkül mindenhol (1.18, 1.14) | Részben: csak a jogosultsági, admin és adatlap oldalakon; máshol 25 `card > h2` maradt, van „Nyitott (n)” cím; a sablonszerkesztő és a mezőtervező sem követi | `szakaszfejlec` | Nyitott |
+| DS-081 | Rádió és jelölőnégyzet: a vezérlő a felirat első sorához igazodik (1.22) | Részben: a jogosultsági ablakokban jó, az általános `.check` középre igazít | `urlapmezok` | Nyitott |
+| DS-082 | Tervezői jegyzetek a próbában: „Keret a bemutató után” hiányzik; a Mozgás jegyzet még 120–200 ms-os kilépést ír; a Továbbiak rácsban .5 px betűköz és levágott nevek | Hiányzik / részben | `app-shell, mozgas` | Nyitott |
+| DS-083 | „Felhasználónév” a „Bejelentkezési név” helyett (1.5) | Részben: a Beállítások › Felhasználók lista és adatlap oszlopa „Bejelentkezési név” | `belepes, adminterulet` | Nyitott |
+| DS-084 | Helyettesítés indítható legyen a próbában: toast, jelvény az avataron, „Kilépek…” a profilmenüben (1.7) | Részben: a kód kész, de az egyetlen indító gomb hibatoastot ad („nem érhető el a próbában”) | `profil` | Nyitott |
+| DS-085 | Irat Adatok fül: címke balra, érték jobbra (1.4) | Részben: az ügyiratoldal irat-oszlopában a címke az érték fölött | `reszletoldal` | Nyitott |
+| DS-086 | Döntés listából döntési nézetben, ha a dokumentumot látni kell (1.9) | Részben: a Jóváhagyás/Véleményezés „Véleményt adok” gombja dokumentum nélküli ablakot nyit | `dontesi-nezet` | Nyitott |
+| DS-087 | Import: hosszú betöltésnél bezárható, értesítés a végén; a bemutató szövege „teljes képernyős ablakot” ír (11-09) | Részben: 3 lépés és 4 számláló megvan, bezárás és értesítés nincs | `fajlfeltolto` | Nyitott |
+| DS-088 | Címtár: Csapatok oldal „Címtárból” csoportokkal, „Címtár: <csoport>” forrás (1.8) | Részben: Kapcsolatok és a „Címtár” forrás lakattal megvan | `adminterulet` | Nyitott |
+| DS-089 | Menüpont kiemelése a menü teljes szélességében (1.9) | Részben: a ⋯ menüben 5 px-es behúzással emelődik ki | `interakcios-allapotok` | Nyitott |
+| DS-090 | Folyamatoldal összesítő csempéi (1.2) | Részben: a Hol tart sáv és az idővonal megvan, a csempék nincsenek | `folyamatoldal` | Nyitott |
+| DS-091 | Súgó visszajelzése: „Hasznos” / „Nem segített” (1.4) | Részben: a chip felirata „Igen, hasznos” | `sugo` | Nyitott |
+| DS-092 | Jogosultság-ellenőrzés: „Jogforrások” szakaszcím (11-09) | Részben: „Amit az alkalmazásgazda adott” áll helyette | `adminterulet` | Nyitott |
+| DS-093 | Sötét téma szerep-tokenjei a próbában is: mezőkeret sötétben `outline` (11-19) | Részben: a próba saját palettája jó, de a mezőkeret sötétben #444a53 (kb. 2:1) | `urlapmezok, tema` | Nyitott |
+| DS-094 | Kevés mezős jogosultsági ablak (Új szerepkör, Megtartás) 560 px (1.17) | Nem ellenőrizhető: az ablak mindig 512 px (640 × 0,8), a két ablak nem található | `muveleti-urlapablak` | Nyitott |
+| DS-095 | SKY dmsX: naptár évváltóval (hónaprács ‹ év ›, évrács) a DS 1.26 szerint | Átvezetés SKY ☐ (a próba és a minta kész) | `urlapmezok` | Nyitott |
 
 ## Kommunikáció
 
