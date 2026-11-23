@@ -1705,7 +1705,7 @@ let aktiv = null;
 /* ---------- útvonal: #/<lap>[/<horgony>] ---------- */
 function utvonal() {
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
-  if (h === 'tartalom') return;
+  if (location.hash === '#tartalom') return; /* csak az „Ugrás a tartalomra” ugrólink; a #/tartalom a Tartalom lap */
   let lap = h, horgony = '';
   if (!LAPOK.has(lap)) {
     const i = lap.lastIndexOf('/');
