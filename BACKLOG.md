@@ -34,10 +34,10 @@ DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.m
 | Integráció | 12 |
 | Figma-átvezetés | 14 |
 | DS-csomag | 13 |
-| Próba | 27 |
+| Próba | 29 |
 | Kommunikáció | 5 |
 | Dokumentáció | 4 |
-| **Összesen** | **95** |
+| **Összesen** | **97** |
 
 > ⚠️ **Sürgős:** DS-063: a Confluence MVP23 „Bejelentkezés” oldalán (127569636) nyílt belépési adat van. Nincs nyoma annak, hogy valaki jelezte volna.
 
@@ -159,6 +159,8 @@ A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változás
 | DS-093 | Sötét téma szerep-tokenjei a próbában is: mezőkeret sötétben `outline` (11-19) | Részben: a próba saját palettája jó, de a mezőkeret sötétben #444a53 (kb. 2:1) | `urlapmezok, tema` | Nyitott |
 | DS-094 | Kevés mezős jogosultsági ablak (Új szerepkör, Megtartás) 560 px (1.17) | Nem ellenőrizhető: az ablak mindig 512 px (640 × 0,8), a két ablak nem található | `muveleti-urlapablak` | Nyitott |
 | DS-095 | SKY dmsX: naptár évváltóval (hónaprács ‹ év ›, évrács) a DS 1.26 szerint | Átvezetés SKY ☐ (a próba és a minta kész) | `urlapmezok` | Nyitott |
+| DS-096 | A 11-25-i próbaváltozások a mintába: jogosultsági képernyők v2 (utoljára használt egység és váltó a fejlécben, váltás-ajánlat, háromblokkos felhasználói adatlap, iktatókönyv Ki látja listával, beágyazott szerepkör, új alegység, AD-belépési pont, a Munkakörnyezet szűrő kikerült), hozzáférési szint új nevei, „Ezt látja” sor, egység + fokozat olvasási jog | Csak a próbában (`c9ccf1d`, `a90a1d4`); a minta (`app-shell` Munkakörnyezet választó, `adminterulet`, `lathatosag`) és a változásnapló nem követi. Átvezetés: Minta ☐ · Teszt ☐ | `app-shell, adminterulet` | Nyitott |
+| DS-097 | Beállítások a fejlécben (DS 1.27, 2026-11-25) a SKY dmsX-ben és a fejlesztett dmsX-ben | A próba és a minta kész (`e05f659`); SKY ☐, fejlesztett dmsX ☐, Figma ☐, bemutató ☐ | `app-shell, adminterulet` | Nyitott |
 
 ## Kommunikáció
 
