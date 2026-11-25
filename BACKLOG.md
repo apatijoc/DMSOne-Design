@@ -34,10 +34,10 @@ DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.m
 | Integráció | 12 |
 | Figma-átvezetés | 14 |
 | DS-csomag | 13 |
-| Próba | 32 |
+| Próba | 33 |
 | Kommunikáció | 5 |
 | Dokumentáció | 4 |
-| **Összesen** | **100** |
+| **Összesen** | **101** |
 
 > ⚠️ **Sürgős:** DS-063: a Confluence MVP23 „Bejelentkezés” oldalán (127569636) nyílt belépési adat van. Nincs nyoma annak, hogy valaki jelezte volna.
 
@@ -138,12 +138,12 @@ A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változás
 | ID | Tétel (DS-döntés) | Mi van ma a próbában | Minta | Állapot |
 |---|---|---|---|---|
 | DS-074 | Visszalépés a listára (1.25): nincs animáció, a görgetés és a szűrők megmaradnak, a fókusz a kiinduló sorra kerül 1,5 s + 400 ms kiemeléssel, eltűnt sornál a lista címére | 2026-11-25: kész a próbában, teszttel (`mozgas` AK5); a „sor eltűnt” ág kódban ellenőrizve | `lista, mozgas` | Kész |
-| DS-075 | Ablakok bezárása egységesen 160 ms (1.24) | Részben: a műveleti ablak animáció nélkül 130 ms-nál tűnik el, a jogosultsági ablak 200 ms-ig oldalra csúszik, a súgó régi görbével, a lenyíló 120/140 ms | `muveleti-urlapablak, fokusznezet` | Nyitott |
+| DS-075 | Ablakok bezárása egységesen 160 ms (1.24) | 2026-11-25: kész (műveleti és jogosultsági ablak a fátyollal, súgópanel), teszttel; a menük 120–140 ms-a marad | `muveleti-urlapablak, fokusznezet` | Kész |
 | DS-076 | Új elem kiemelése: 1,5 s áll, 400 ms alatt elhalványul (1.24) | Részben: az új megjegyzés kiemelése nem halványul el | `megjegyzes-szal, elo-frissites` | Nyitott |
 | DS-077 | Második menüszint zárása 160 ms elhalványulással, a nyíl visszafordul (1.24) | Részben: a nyitás megvan, a zárás animáció nélküli | `app-shell` | Nyitott |
 | DS-078 | Szakasz az ablakban: cím a blokk fölött, keret nélküli frame-blokk; szakaszhiba 1 px Error kerettel (1.21) | Hiányzik (csak a SKY dmsX-ben van): a jogosultsági ablakok szakaszai sima címke + keretes doboz | `szakaszfejlec, muveleti-urlapablak` | Nyitott |
 | DS-079 | Részletpanel-változat: fejléc Featured iconnal, szakaszok frame-blokkban, címke–érték egymás alatt (1.20) | Hiányzik: a próbában nincs részletpanel | `szakaszfejlec` | Nyitott |
-| DS-080 | Szakaszcím a kártya fölött, darabszám nélkül mindenhol (1.18, 1.14) | Részben: csak a jogosultsági, admin és adatlap oldalakon; máshol 25 `card > h2` maradt, van „Nyitott (n)” cím; a sablonszerkesztő és a mezőtervező sem követi | `szakaszfejlec` | Nyitott |
+| DS-080 | Szakaszcím a kártya fölött, darabszám nélkül mindenhol (1.18, 1.14) | 2026-11-25: kész a próbában (minden kártyás szakasz, 4 darabszámos cím), teszttel; a „Megjegyzések (n)” és „Fájlok (n)” ellentmondás: DS-101 | `szakaszfejlec` | Kész |
 | DS-081 | Rádió és jelölőnégyzet: a vezérlő a felirat első sorához igazodik (1.22) | Részben: a jogosultsági ablakokban jó, az általános `.check` középre igazít | `urlapmezok` | Nyitott |
 | DS-082 | Tervezői jegyzetek a próbában: „Keret a bemutató után” hiányzik; a Mozgás jegyzet még 120–200 ms-os kilépést ír; a Továbbiak rácsban .5 px betűköz és levágott nevek | Hiányzik / részben | `app-shell, mozgas` | Nyitott |
 | DS-083 | „Felhasználónév” a „Bejelentkezési név” helyett (1.5) | 2026-11-25: kész (lista és adatlap) | `belepes, adminterulet` | Kész |
@@ -164,6 +164,7 @@ A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változás
 | DS-098 | Műveleti ablak leírósora info-ikon mögött (próba `c25ee62`, 2026-11-25) és a delegált jogkezelő kivezetése | Csak a próbában; a `muveleti-urlapablak` minta (fejléc: „alatta egy mondat leírás”, 2 elfogadási kritérium) és az `adminterulet` ellentmond neki. 2026-11-25: eldöntve, tartalom szerint (következmény és tárgysor látható, magyarázat info-ikon mögött, a címet ismétlő mondat kimarad), minden műveleti ablakra; minta, próba (42 ablak) és teszt kész (DS 1.29) | `muveleti-urlapablak, adminterulet` | Kész |
 | DS-099 | Képernyőtérképek: „Látható műveletek” oszlop minden domain térképébe (`eszkoztar`, DS 1.30): oldalanként a fő művelet és legfeljebb két gyakori; ami nincs benne, a ⋯ mögé kerül | A szabály kész (minta, próba, teszt, ellenőrző); a 13 térkép oszlopa hiányzik | `kimenet/felulet-design-ux-copy/kepernyoterkep/` | Nyitott |
 | DS-100 | Az „Új” gomb tartalma (`uj-menu`, `app-shell`; DS-kérés 2026-11-25): bárhonnan, előzmény nélkül indított fő munka (feladat kiadása, folyamat indítása, dokumentum feltöltése, köteg szkennelése és feltöltése, iktatás); beállítás, sablon, szabály, törzsadat nem; csak jogosult elem, a keresett, de nem jogosult tiltva okkal; legfeljebb 5–6 elem domainenként csoportosítva, a fő munka felül; egy elemnél menü nélkül nyit („Új: <mi>”); kikapcsolt domain eleme nem jelenik meg; (Ollári Ákos) az iktatás egy pont, az irány és a változat az ablakban, iktatónál mellette Csoportos iktatás | Vár: döntőpult-kártya (Kovács Tamás dönt, a domaingazdák szavaznak); a mintába és a próbába csak utána kerül, addig a mostani nyolcpontos iktatási menü marad. A döntés után módosul: az `uj-menu` anatómiája (3 csoport → domaincsoportok), a 2 elfogadási kritérium (az első „Bejövő gyorsiktató” helyett „Bejövő iktatás”, ha a 6. pontot Ollári Ákos elfogadja; az N billentyű sora a 6. ponttól függ), +1 kritérium (Kovács Anna: legfeljebb hat elem, első a Feladat kiadása), UX-074-a (a domainek regisztrálják az elemeket). A felmérés fájlja (`feltaras/felulet-design-ux-copy/felulet-design-ux-copy-uj-gomb-felmeres-2026-11-25.md`) még nincs a fő ágon | `uj-menu, app-shell` | Vár: döntőpult |
+| DS-101 | Ellentmondás: darabszám a szakaszcímben. A `szakaszfejlec` tiltja („Tagok (3)” helyett „Tagok”), a `megjegyzes-szal` („Megjegyzések (26)”) és a `csatolmanyok-resz` („Fájlok (4)”) előírja, elfogadási kritériummal | Döntés kell: kivétel ez a két minta (a darabszám a tartalomról szól, nem a szakaszról), vagy a szám a fül jelvényére / a tartalomba kerül | `szakaszfejlec, megjegyzes-szal, csatolmanyok-resz` | Nyitott |
 
 ## Kommunikáció
 
