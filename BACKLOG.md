@@ -34,10 +34,10 @@ DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.m
 | Integráció | 12 |
 | Figma-átvezetés | 14 |
 | DS-csomag | 13 |
-| Próba | 31 |
+| Próba | 32 |
 | Kommunikáció | 5 |
 | Dokumentáció | 4 |
-| **Összesen** | **99** |
+| **Összesen** | **100** |
 
 > ⚠️ **Sürgős:** DS-063: a Confluence MVP23 „Bejelentkezés” oldalán (127569636) nyílt belépési adat van. Nincs nyoma annak, hogy valaki jelezte volna.
 
@@ -163,6 +163,7 @@ A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változás
 | DS-097 | Beállítások a fejlécben (DS 1.27, 2026-11-25) a SKY dmsX-ben és a fejlesztett dmsX-ben | A próba és a minta kész (`e05f659`); SKY ☐, fejlesztett dmsX ☐, Figma ☐, bemutató ☐ | `app-shell, adminterulet` | Nyitott |
 | DS-098 | Műveleti ablak leírósora info-ikon mögött (próba `c25ee62`, 2026-11-25) és a delegált jogkezelő kivezetése | Csak a próbában; a `muveleti-urlapablak` minta (fejléc: „alatta egy mondat leírás”, 2 elfogadási kritérium) és az `adminterulet` ellentmond neki. 2026-11-25: eldöntve, tartalom szerint (következmény és tárgysor látható, magyarázat info-ikon mögött, a címet ismétlő mondat kimarad), minden műveleti ablakra; minta, próba (42 ablak) és teszt kész (DS 1.29) | `muveleti-urlapablak, adminterulet` | Kész |
 | DS-099 | Képernyőtérképek: „Látható műveletek” oszlop minden domain térképébe (`eszkoztar`, DS 1.30): oldalanként a fő művelet és legfeljebb két gyakori; ami nincs benne, a ⋯ mögé kerül | A szabály kész (minta, próba, teszt, ellenőrző); a 13 térkép oszlopa hiányzik | `kimenet/felulet-design-ux-copy/kepernyoterkep/` | Nyitott |
+| DS-100 | Az „Új” gomb tartalma (`uj-menu`, `app-shell`; DS-kérés 2026-11-25): bárhonnan, előzmény nélkül indított fő munka (feladat kiadása, folyamat indítása, dokumentum feltöltése, köteg szkennelése és feltöltése, iktatás); beállítás, sablon, szabály, törzsadat nem; csak jogosult elem, a keresett, de nem jogosult tiltva okkal; legfeljebb 5–6 elem domainenként csoportosítva, a fő munka felül; egy elemnél menü nélkül nyit („Új: <mi>”); kikapcsolt domain eleme nem jelenik meg; (Ollári Ákos) az iktatás egy pont, az irány és a változat az ablakban, iktatónál mellette Csoportos iktatás | Vár: döntőpult-kártya (Kovács Tamás dönt, a domaingazdák szavaznak); a mintába és a próbába csak utána kerül, addig a mostani nyolcpontos iktatási menü marad. A döntés után módosul: az `uj-menu` anatómiája (3 csoport → domaincsoportok), a 2 elfogadási kritérium (az első „Bejövő gyorsiktató” helyett „Bejövő iktatás”, ha a 6. pontot Ollári Ákos elfogadja; az N billentyű sora a 6. ponttól függ), +1 kritérium (Kovács Anna: legfeljebb hat elem, első a Feladat kiadása), UX-074-a (a domainek regisztrálják az elemeket). A felmérés fájlja (`feltaras/felulet-design-ux-copy/felulet-design-ux-copy-uj-gomb-felmeres-2026-11-25.md`) még nincs a fő ágon | `uj-menu, app-shell` | Vár: döntőpult |
 
 ## Kommunikáció
 
