@@ -34,10 +34,10 @@ DSR = `DS/README.md` · FA = `DS/figma-atvezetes.md` · VN = `DS/VALTOZASNAPLO.m
 | Integráció | 12 |
 | Figma-átvezetés | 14 |
 | DS-csomag | 13 |
-| Próba | 30 |
+| Próba | 31 |
 | Kommunikáció | 5 |
 | Dokumentáció | 4 |
-| **Összesen** | **98** |
+| **Összesen** | **99** |
 
 > ⚠️ **Sürgős:** DS-063: a Confluence MVP23 „Bejelentkezés” oldalán (127569636) nyílt belépési adat van. Nincs nyoma annak, hogy valaki jelezte volna.
 
@@ -162,6 +162,7 @@ A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változás
 | DS-096 | A 11-25-i próbaváltozások a mintába: jogosultsági képernyők v2 (utoljára használt egység és váltó a fejlécben, váltás-ajánlat, háromblokkos felhasználói adatlap, iktatókönyv Ki látja listával, beágyazott szerepkör, új alegység, AD-belépési pont, a Munkakörnyezet szűrő kikerült), hozzáférési szint új nevei, „Ezt látja” sor, egység + fokozat olvasási jog | 2026-11-25: a mintában javaslatként (DS 1.28, `e2a90ce`; `[JAVASLAT …]` jelölés, az ügynök a 11-30-i döntésig nem építi); a tesztek a döntés után. A v2 vitaanyag fájlja nincs a repóban | `app-shell, adminterulet` | Kész |
 | DS-097 | Beállítások a fejlécben (DS 1.27, 2026-11-25) a SKY dmsX-ben és a fejlesztett dmsX-ben | A próba és a minta kész (`e05f659`); SKY ☐, fejlesztett dmsX ☐, Figma ☐, bemutató ☐ | `app-shell, adminterulet` | Nyitott |
 | DS-098 | Műveleti ablak leírósora info-ikon mögött (próba `c25ee62`, 2026-11-25) és a delegált jogkezelő kivezetése | Csak a próbában; a `muveleti-urlapablak` minta (fejléc: „alatta egy mondat leírás”, 2 elfogadási kritérium) és az `adminterulet` ellentmond neki. 2026-11-25: eldöntve, tartalom szerint (következmény és tárgysor látható, magyarázat info-ikon mögött, a címet ismétlő mondat kimarad), minden műveleti ablakra; minta, próba (42 ablak) és teszt kész (DS 1.29) | `muveleti-urlapablak, adminterulet` | Kész |
+| DS-099 | Képernyőtérképek: „Látható műveletek” oszlop minden domain térképébe (`eszkoztar`, DS 1.30): oldalanként a fő művelet és legfeljebb két gyakori; ami nincs benne, a ⋯ mögé kerül | A szabály kész (minta, próba, teszt, ellenőrző); a 13 térkép oszlopa hiányzik | `kimenet/felulet-design-ux-copy/kepernyoterkep/` | Nyitott |
 
 ## Kommunikáció
 
