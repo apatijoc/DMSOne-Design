@@ -137,7 +137,7 @@ A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változás
 
 | ID | Tétel (DS-döntés) | Mi van ma a próbában | Minta | Állapot |
 |---|---|---|---|---|
-| DS-074 | Visszalépés a listára (1.25): nincs animáció, a görgetés és a szűrők megmaradnak, a fókusz a kiinduló sorra kerül 1,5 s + 400 ms kiemeléssel, eltűnt sornál a lista címére | Hiányzik: visszalépéskor újra fut a belépő animáció, a görgetés a tetejére ugrik, a fókusz a BODY-n | `lista, mozgas` | Nyitott |
+| DS-074 | Visszalépés a listára (1.25): nincs animáció, a görgetés és a szűrők megmaradnak, a fókusz a kiinduló sorra kerül 1,5 s + 400 ms kiemeléssel, eltűnt sornál a lista címére | 2026-11-25: kész a próbában, teszttel (`mozgas` AK5); a „sor eltűnt” ág kódban ellenőrizve | `lista, mozgas` | Kész |
 | DS-075 | Ablakok bezárása egységesen 160 ms (1.24) | Részben: a műveleti ablak animáció nélkül 130 ms-nál tűnik el, a jogosultsági ablak 200 ms-ig oldalra csúszik, a súgó régi görbével, a lenyíló 120/140 ms | `muveleti-urlapablak, fokusznezet` | Nyitott |
 | DS-076 | Új elem kiemelése: 1,5 s áll, 400 ms alatt elhalványul (1.24) | Részben: az új megjegyzés kiemelése nem halványul el | `megjegyzes-szal, elo-frissites` | Nyitott |
 | DS-077 | Második menüszint zárása 160 ms elhalványulással, a nyíl visszafordul (1.24) | Részben: a nyitás megvan, a zárás animáció nélküli | `app-shell` | Nyitott |
@@ -146,7 +146,7 @@ A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változás
 | DS-080 | Szakaszcím a kártya fölött, darabszám nélkül mindenhol (1.18, 1.14) | Részben: csak a jogosultsági, admin és adatlap oldalakon; máshol 25 `card > h2` maradt, van „Nyitott (n)” cím; a sablonszerkesztő és a mezőtervező sem követi | `szakaszfejlec` | Nyitott |
 | DS-081 | Rádió és jelölőnégyzet: a vezérlő a felirat első sorához igazodik (1.22) | Részben: a jogosultsági ablakokban jó, az általános `.check` középre igazít | `urlapmezok` | Nyitott |
 | DS-082 | Tervezői jegyzetek a próbában: „Keret a bemutató után” hiányzik; a Mozgás jegyzet még 120–200 ms-os kilépést ír; a Továbbiak rácsban .5 px betűköz és levágott nevek | Hiányzik / részben | `app-shell, mozgas` | Nyitott |
-| DS-083 | „Felhasználónév” a „Bejelentkezési név” helyett (1.5) | Részben: a Beállítások › Felhasználók lista és adatlap oszlopa „Bejelentkezési név” | `belepes, adminterulet` | Nyitott |
+| DS-083 | „Felhasználónév” a „Bejelentkezési név” helyett (1.5) | 2026-11-25: kész (lista és adatlap) | `belepes, adminterulet` | Kész |
 | DS-084 | Helyettesítés indítható legyen a próbában: toast, jelvény az avataron, „Kilépek…” a profilmenüben (1.7) | Részben: a kód kész, de az egyetlen indító gomb hibatoastot ad („nem érhető el a próbában”) | `profil` | Nyitott |
 | DS-085 | Irat Adatok fül: címke balra, érték jobbra (1.4) | Részben: az ügyiratoldal irat-oszlopában a címke az érték fölött | `reszletoldal` | Nyitott |
 | DS-086 | Döntés listából döntési nézetben, ha a dokumentumot látni kell (1.9) | Részben: a Jóváhagyás/Véleményezés „Véleményt adok” gombja dokumentum nélküli ablakot nyit | `dontesi-nezet` | Nyitott |
