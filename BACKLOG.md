@@ -144,17 +144,17 @@ A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változás
 | DS-078 | Szakasz az ablakban: cím a blokk fölött, keret nélküli frame-blokk; szakaszhiba 1 px Error kerettel (1.21) | Hiányzik (csak a SKY dmsX-ben van): a jogosultsági ablakok szakaszai sima címke + keretes doboz | `szakaszfejlec, muveleti-urlapablak` | Nyitott |
 | DS-079 | Részletpanel-változat: fejléc Featured iconnal, szakaszok frame-blokkban, címke–érték egymás alatt (1.20) | Hiányzik: a próbában nincs részletpanel | `szakaszfejlec` | Nyitott |
 | DS-080 | Szakaszcím a kártya fölött, darabszám nélkül mindenhol (1.18, 1.14) | 2026-11-25: kész a próbában (minden kártyás szakasz, 4 darabszámos cím), teszttel; a „Megjegyzések (n)” és „Fájlok (n)” ellentmondás: DS-101 | `szakaszfejlec` | Kész |
-| DS-081 | Rádió és jelölőnégyzet: a vezérlő a felirat első sorához igazodik (1.22) | Részben: a jogosultsági ablakokban jó, az általános `.check` középre igazít | `urlapmezok` | Nyitott |
+| DS-081 | Rádió és jelölőnégyzet: a vezérlő a felirat első sorához igazodik (1.22) | 2026-11-25: kész (általános jelölőnégyzet az első sorhoz) | `urlapmezok` | Kész |
 | DS-082 | Tervezői jegyzetek a próbában: „Keret a bemutató után” hiányzik; a Mozgás jegyzet még 120–200 ms-os kilépést ír; a Továbbiak rácsban .5 px betűköz és levágott nevek | Hiányzik / részben | `app-shell, mozgas` | Nyitott |
 | DS-083 | „Felhasználónév” a „Bejelentkezési név” helyett (1.5) | 2026-11-25: kész (lista és adatlap) | `belepes, adminterulet` | Kész |
 | DS-084 | Helyettesítés indítható legyen a próbában: toast, jelvény az avataron, „Kilépek…” a profilmenüben (1.7) | Részben: a kód kész, de az egyetlen indító gomb hibatoastot ad („nem érhető el a próbában”) | `profil` | Nyitott |
-| DS-085 | Irat Adatok fül: címke balra, érték jobbra (1.4) | Részben: az ügyiratoldal irat-oszlopában a címke az érték fölött | `reszletoldal` | Nyitott |
+| DS-085 | Irat Adatok fül: címke balra, érték jobbra (1.4) | 2026-11-25: nem hiba – 640 px alatti oszlopban a minta szerint a címke az érték fölött (1440 px: 422 px-es oszlop) | `reszletoldal` | Elvetve |
 | DS-086 | Döntés listából döntési nézetben, ha a dokumentumot látni kell (1.9) | Részben: a Jóváhagyás/Véleményezés „Véleményt adok” gombja dokumentum nélküli ablakot nyit | `dontesi-nezet` | Nyitott |
 | DS-087 | Import: hosszú betöltésnél bezárható, értesítés a végén; a bemutató szövege „teljes képernyős ablakot” ír (11-09) | Részben: 3 lépés és 4 számláló megvan, bezárás és értesítés nincs | `fajlfeltolto` | Nyitott |
 | DS-088 | Címtár: Csapatok oldal „Címtárból” csoportokkal, „Címtár: <csoport>” forrás (1.8) | Részben: Kapcsolatok és a „Címtár” forrás lakattal megvan | `adminterulet` | Nyitott |
-| DS-089 | Menüpont kiemelése a menü teljes szélességében (1.9) | Részben: a ⋯ menüben 5 px-es behúzással emelődik ki | `interakcios-allapotok` | Nyitott |
+| DS-089 | Menüpont kiemelése a menü teljes szélességében (1.9) | 2026-11-25: nem hiba – a kiemelés a menü belső margóján belül tölt ki (komponensek.md) | `interakcios-allapotok` | Elvetve |
 | DS-090 | Folyamatoldal összesítő csempéi (1.2) | Részben: a Hol tart sáv és az idővonal megvan, a csempék nincsenek | `folyamatoldal` | Nyitott |
-| DS-091 | Súgó visszajelzése: „Hasznos” / „Nem segített” (1.4) | Részben: a chip felirata „Igen, hasznos” | `sugo` | Nyitott |
+| DS-091 | Súgó visszajelzése: „Hasznos” / „Nem segített” (1.4) | 2026-11-25: a minta igazítva a próbához („Igen, hasznos” / „Nem segített”), DS 1.31 | `sugo` | Kész |
 | DS-092 | Jogosultság-ellenőrzés: „Jogforrások” szakaszcím (11-09) | Részben: „Amit az alkalmazásgazda adott” áll helyette | `adminterulet` | Nyitott |
 | DS-093 | Sötét téma szerep-tokenjei a próbában is: mezőkeret sötétben `outline` (11-19) | Részben: a próba saját palettája jó, de a mezőkeret sötétben #444a53 (kb. 2:1) | `urlapmezok, tema` | Nyitott |
 | DS-094 | Kevés mezős jogosultsági ablak (Új szerepkör, Megtartás) 560 px (1.17) | Nem ellenőrizhető: az ablak mindig 512 px (640 × 0,8), a két ablak nem található | `muveleti-urlapablak` | Nyitott |
