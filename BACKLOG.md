@@ -139,8 +139,8 @@ A próba a referencia-megvalósítás (Apáti József, 2026-11-23). A változás
 |---|---|---|---|---|
 | DS-074 | Visszalépés a listára (1.25): nincs animáció, a görgetés és a szűrők megmaradnak, a fókusz a kiinduló sorra kerül 1,5 s + 400 ms kiemeléssel, eltűnt sornál a lista címére | 2026-11-25: kész a próbában, teszttel (`mozgas` AK5); a „sor eltűnt” ág kódban ellenőrizve | `lista, mozgas` | Kész |
 | DS-075 | Ablakok bezárása egységesen 160 ms (1.24) | 2026-11-25: kész (műveleti és jogosultsági ablak a fátyollal, súgópanel), teszttel; a menük 120–140 ms-a marad | `muveleti-urlapablak, fokusznezet` | Kész |
-| DS-076 | Új elem kiemelése: 1,5 s áll, 400 ms alatt elhalványul (1.24) | Részben: az új megjegyzés kiemelése nem halványul el | `megjegyzes-szal, elo-frissites` | Nyitott |
-| DS-077 | Második menüszint zárása 160 ms elhalványulással, a nyíl visszafordul (1.24) | Részben: a nyitás megvan, a zárás animáció nélküli | `app-shell` | Nyitott |
+| DS-076 | Új elem kiemelése: 1,5 s áll, 400 ms alatt elhalványul (1.24) | 2026-11-25: kész (megjegyzés), teszttel | `megjegyzes-szal, elo-frissites` | Kész |
+| DS-077 | Második menüszint zárása 160 ms elhalványulással, a nyíl visszafordul (1.24) | 2026-11-25: kész, böngészőben ellenőrizve (nincs rá kritérium) | `app-shell` | Kész |
 | DS-078 | Szakasz az ablakban: cím a blokk fölött, keret nélküli frame-blokk; szakaszhiba 1 px Error kerettel (1.21) | Hiányzik (csak a SKY dmsX-ben van): a jogosultsági ablakok szakaszai sima címke + keretes doboz | `szakaszfejlec, muveleti-urlapablak` | Nyitott |
 | DS-079 | Részletpanel-változat: fejléc Featured iconnal, szakaszok frame-blokkban, címke–érték egymás alatt (1.20) | Hiányzik: a próbában nincs részletpanel | `szakaszfejlec` | Nyitott |
 | DS-080 | Szakaszcím a kártya fölött, darabszám nélkül mindenhol (1.18, 1.14) | 2026-11-25: kész a próbában (minden kártyás szakasz, 4 darabszámos cím), teszttel; a „Megjegyzések (n)” és „Fájlok (n)” ellentmondás: DS-101 | `szakaszfejlec` | Kész |
